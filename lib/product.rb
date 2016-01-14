@@ -1,5 +1,6 @@
 class Product
-  attr_reader :title, :price, :stock
+  attr_reader :title, :price
+  attr_accessor :stock
 
   @@products = []
 
@@ -34,7 +35,7 @@ class Product
       product_exists = true if product.title == @title
     end
     if product_exists
-      raise DuplicateProductError, "#{@title} already exists."
+      raise DuplicateProductError, "'#{@title}' already exists."
     else
       @@products << self
     end

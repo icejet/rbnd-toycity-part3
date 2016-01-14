@@ -16,6 +16,10 @@ class Customer
     @@customers.at(@@customers.index { |customer| customer.name == name })
   end
 
+  def purchase(item)
+    Transaction.new(self, item)
+  end
+
   private
 
   def add_to_customers
