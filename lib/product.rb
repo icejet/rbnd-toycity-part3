@@ -4,7 +4,7 @@ class Product
 
   @@products = []
 
-  def initialize(options={})
+  def initialize(options = {})
     @title = options[:title]
     @price = options[:price]
     @stock = options[:stock]

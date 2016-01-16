@@ -63,3 +63,9 @@ puts transaction2.product == nanoblock # Should return true
 
 # walter.purchase(firehouse)
 # Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.
+
+matched_products = Transaction.find_by_product(nanoblock.title)
+matched_products.each { |t| puts t.product.title }
+
+matched_customers = Transaction.find_by_customer(walter.name)
+matched_customers.each { |t| puts t.customer.name }

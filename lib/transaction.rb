@@ -23,6 +23,18 @@ class Transaction
     @@transactions.at(index)
   end
 
+  def self.find_by_product(title)
+    @@transactions.select do |transaction|
+      transaction.product.title == title
+    end
+  end
+
+  def self.find_by_customer(name)
+    @@transactions.select do |transaction|
+      transaction.customer.name == name
+    end
+  end
+
   private
 
   def assign_id
