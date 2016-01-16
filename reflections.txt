@@ -1,0 +1,14 @@
+1.) I spent around 2 hours working on this project.
+2.) The biggest challenge for me was changing the way I think about programming
+to implement these object oriented concepts.  Doing that successfully has been
+very rewarding.
+3.) Both the features I built are based around the transaction class.
+Feature 1: Search transactions by user name.
+Feature 2: Search transactions by product title.
+I built these features because I know from experience that searching by id isn't
+usually practical since it is basically just an arbitrary number.
+4.) I am still pretty new object oriented programming, and I have a ways to go
+before I am ready to use it in production code. I'm also not used to having the
+staggering number of methods and syntactic sugar at my disposal. It seems like
+I could do a better job at making sure that there isn't an easier way to
+accomplish whatever I'm trying to do.
